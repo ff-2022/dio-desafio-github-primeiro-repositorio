@@ -1,2 +1,46 @@
+
+	##############
+	# Git/GitHub #
+	##############
+
 Link para download do Git:  https://git-scm.com/downloads
-O Git Bash é um términall extendido para eliminar o uso do Git.
+
+O Git Bash é um términal extendido para eliminar o uso do Git.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+# CHAVE SSH e TOKEN
+
+#Criar
+ssh-keygen -t ed25519 -C "email"
+
+#Ativar agent
+eval $(ssh-agent -s)
+
+#Adicionar
+ssh-add id_ed25519
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+# Comandos dos GIT [Inicializar, configurar, Criar, Adiconar, Commitar, Enviar, Puxar, Clonar, Limpar Credênciais, Lista Repositório Remotos]
+
+git init
+
+git config --global user.email "email"
+
+git config --global user.name "ff-2022"
+
+git add .
+
+git commit -m "First commit"
+
+git push origin main
+
+git pull origin main
+
+git clone "https://github.com/ff-2022/dio-desafio-github-primeiro-repositorio"
+
+git config --global --unset user.email
+
+git config --global --unset user.name
+
+git remote -v
+----------------------------------------------------------------------------------------------------------------------------------------------------
